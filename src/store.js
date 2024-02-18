@@ -8,7 +8,10 @@ const rootReducer = combineReducers({
     customer:customerReducer,
 });
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer,applyMiddleware(thunk));
+
+
+
 
 
 export default store;
