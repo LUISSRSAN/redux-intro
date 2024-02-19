@@ -29,6 +29,7 @@ export default function accountReducer (state=initialStateAccount,action){
         if(currency ==="USD") return { type: "account/deposit",payload:amount};
         return function(dispatch,getState){
 //API call 
+fetch(fetch (''));
 //return action
         }
     
